@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.top-outer{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: fixed;
+    z-index:1;
+
+}
+.m-1{
+    bottom: 0;
+    width: 100%;
+    height: 70vh;
+}
+
+
+.car-animate{
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    position: fixed;
+    background-image:url("images/road.png" );
+    background-color: #252525;
+
+}
+
+
+
+.car-wrapper{
+    top: 16vh;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    animation: leftToRight 10s infinite linear;
+
+
+}
+.car-wrapper-2{
+    top: 10vh;
+    width: 280px;
+    height: 100px;
+    position: relative;
+    animation: RightToLeft 10s infinite linear;
+    z-index:1;
+}
+
+.car-wrapper-3{
+    top: -9vh;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    animation: RightToLeft 9s infinite linear;
+
+}
+
+.car-wrapper-4{
+    top: -11.5vh;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    animation: RightToLeft 15s infinite linear;
+    z-index:1;
+}
+
+
+
+.car{
+    width: 100%;
+    margin-top: 25px;
+
+}
+
+.car-2{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.car-3{
+    width: 100%;
+    margin-top: -36px;
+
+}
+
+.car-4{
+    width: 100%;
+    margin-top: -20px;
+
+}
+
+.wheel{
+    width: 43px;
+    position: absolute;
+    bottom: 0;
+    animation-name:forwardWheel;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.wheel2{
+    width: 46px;
+    position: absolute;
+    bottom: 0;
+    animation-name:forwardWheel-2;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.wheel3{
+    width: 48px;
+    position: absolute;
+    bottom: 0;
+    animation-name:forwardWheel-3;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.wheel4{
+    width: 48px;
+    position: absolute;
+    bottom: 0;
+    animation-name:forwardWheel-3;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.wheel-1{
+    left: 23px;
+}
+.wheel-2{
+    right: 29px;
+}
+.wheel-3{
+    left: 179px;
+}
+.wheel-4{
+    right: 192px;
+}
+.wheel-5{
+    left: 200px;
+}
+.wheel-6{
+    right: 201px;
+}
+.wheel-7{
+    right: 181px;
+}
+.wheel-8{
+    left: 210px;
+}
+
+
+
+.cloud-1{
+    width: 210px;
+    position: absolute;
+    right: -100px;
+    animation: cloud 20s linear infinite;
+}
+.cloud-2{
+    width: 280px;
+    position: absolute;
+    right: -130px;
+    animation: cloud 38s linear infinite;
+}
+.cloud-3{
+    width: 350px;
+    position: absolute;
+    left: 100px;
+    animation: cloud1 58s linear infinite;
+}
+.cloud-4{
+    width: 300px;
+    position: absolute;
+    right: -100px;
+    animation: cloud1 80s linear infinite;
+}
+
+.cloud-5{
+    width: 300px;
+    position: absolute;
+    right: -100px;
+    animation: cloud 60s linear infinite;
+}
+
+/*================*/
+
+@keyframes cloud {
+    from{
+        right: -150px;
+    }
+    to{
+        right: 1600px;
+    }
+}
+@keyframes cloud1 {
+    from{
+        left: -150px;
+    }
+    to{
+        left: 1600px;
+    }
+}
+
+/*================*/
+
+/*================*/
+
+@keyframes forwardWheel {
+    from{
+        transform:rotate(0) ;
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes forwardWheel-2 {
+    from{
+        transform:rotate(0) ;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes forwardWheel-3 {
+    from{
+        transform:rotate(0) ;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/*================*/
+/*================*/
+@keyframes leftToRight {
+    0%{
+        left: calc(100% - 100px);
+
+    }
+    100%{
+        left: 0;
+    }
+    100%{
+        left: calc(-100% - 100px);
+    }
+
+}
+
+@keyframes RightToLeft {
+    0% {
+        left: calc(-100% - 100px);
+
+    }
+    100% {
+        left: 0;
+    }
+    100% {
+        left: calc(100% + 100px);
+    }
+
+}
+
+
+/*================*/
